@@ -40,7 +40,7 @@ class Solution:
         
         count = 0
         for i in range(len(s)-1,-1,-1):
-            if (s[i] >= chr(97) and s[i] <= chr(122)) or (s[i] >= chr(65) and s[i] <= chr(90)):
+            if s[i] != ' ':
                 count+=1
             if s[i] == ' ' and count == 0:
                 continue   
